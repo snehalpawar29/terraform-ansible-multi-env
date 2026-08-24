@@ -1,0 +1,5 @@
+- name: Install nginx and render a webpage
+  hosts: servers
+  become: true
+  roles:
+    - nginx-role

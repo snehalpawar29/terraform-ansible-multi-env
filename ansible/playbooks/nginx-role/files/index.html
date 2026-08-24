@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snehal Pawar | DevOps Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --glow: rgba(56, 189, 248, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .tagline {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            font-size: 1rem;
+            color: #e2e8f0;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 20px var(--glow);
+        }
+
+        .card h3 {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: auto;
+            padding-top: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #1e293b;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: 1px solid #334155;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: #0f172a;
+            border-color: var(--accent-color);
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.85rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Snehal Pawar</h1>
+            <p>Cloud & DevOps Engineer</p>
+        </header>
+
+        <div class="tagline">
+            🤖 <strong>Welcome to my automated deployment!</strong> This environment was spun up dynamically via
+            <strong>Terraform</strong> and provisioned using <strong>Ansible Roles</strong>.
+        </div>
+
+        <h2 class="section-title">🛠️ Core Engineering Stack</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Cloud Computing</h3>
+                <p>Architecting environments on AWS using scalable, highly-available services.</p>
+            </div>
+            <div class="card">
+                <h3>Infrastructure as Code</h3>
+                <p>Writing clean, modular components with Terraform to automate target networks.</p>
+            </div>
+            <div class="card">
+                <h3>Automation & Config</h3>
+                <p>Orchestrating deployments, servers, and configuration states with Ansible.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">🌐 Professional Networks</h2>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/snehal-pawar29/" target="_blank" class="btn">💼 Connect on LinkedIn</a>
+            <a href="https://github.com/snehalpawar29" target="_blank" class="btn">🚀 View GitHub Profile</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Snehal Pawar | Built to Automate • Automated to Scale</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

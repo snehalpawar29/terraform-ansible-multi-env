@@ -1,0 +1,31 @@
+# ==========================================
+# 1. Terraform Security & Runtime Caches
+# ==========================================
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# ==========================================
+# 2. Private Credentials & SSH Keys
+# ==========================================
+# Blocks your private connection key but allows your public (.pub) key
+snehal-devops-key
+!snehal-devops-key.pub
+*.pem
+*.key
+
+# ==========================================
+# 3. Dynamic Configurations & Secrets
+# ==========================================
+# Keeps your custom variables out of public sight
+*.tfvars
+*.tfvars.json
+
+# ==========================================
+# 4. System & OS Overhead
+# ==========================================
+.DS_Store
+Thumbs.db

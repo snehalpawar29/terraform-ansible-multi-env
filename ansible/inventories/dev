@@ -1,0 +1,7 @@
+[servers]
+server1 ansible_host=3.110.50.12
+ 
+[servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/terraform-ansible-multi-env/terraform/snehal-devops-key
+ansible_python_interpreter=/usr/bin/python3
